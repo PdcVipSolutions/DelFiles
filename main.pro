@@ -28,7 +28,7 @@ class predicates
     deleteFilesFromFile:(string FileName).
 clauses
     deleteFilesFromFile(FileName):-
-        if file::existExactFile(FileName) then
+        if file::existFile(FileName) then
             FileListStr=file::readString(FileName),
             FileList=string::split_delimiter(FileListStr,"\n"),
             deleteFileList(FileList),
@@ -44,7 +44,7 @@ clauses
         _=[""||
             FileToDelete=list::getMember_nd(FileList),
             if
-                file::existExactFile(FileToDelete)
+                file::existFile(FileToDelete)
             then
                 try
                     file::delete(FileToDelete)

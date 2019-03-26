@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<projectData-map debug_directory="Deb" description="DelFiles" final_directory="$(SpbSolutions)Bin" intermediate_directory="Obj" pattern="Console application" rules="Console" version="6">
+<projectData-map debug_directory="Deb" description="DelFiles" final_directory="$(SpbVipTools)Bin" intermediate_directory="Obj" pattern="Console application" rules="Console" version="6">
   <include_directory-list>
     <include_directory>.</include_directory>
     <include_directory>$(ProDir)</include_directory>
@@ -22,6 +22,7 @@
     <item-map filename="$(ProDir)pfc\collection\collection.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\arrayM_inline\arrayM_inline.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\mapM_redBlack\mapM_redBlack.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\queueM_fact\queueM_fact.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\setM_redBlack\setM_redBlack.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\varM\varM.pack" />
     <item-map filename="$(ProDir)pfc\collection\support\collectionMsupport\collectionMsupport.pack" />
@@ -49,6 +50,7 @@
     <item-map filename="$(ProDir)pfc\memory\segmented\segmentedSupport\segmentedSupport.pack" />
     <item-map filename="$(ProDir)pfc\memory\weakReference\weakReference.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\compareAndSwap\compareAndSwap.pack" />
+    <item-map filename="$(ProDir)pfc\multiThread\multiThread.pack" />
     <item-map filename="$(ProDir)pfc\namedValue\namedValue.pack" />
     <item-map filename="$(ProDir)pfc\presenter\presenter.pack" />
     <item-map filename="$(ProDir)pfc\programControl\programControl.pack" />
@@ -57,6 +59,7 @@
     <item-map filename="$(ProDir)pfc\registry\registry.pack" />
     <item-map filename="$(ProDir)pfc\std\std.pack" />
     <item-map filename="$(ProDir)pfc\stream\inputStreamSupport\inputStreamSupport.pack" />
+    <item-map filename="$(ProDir)pfc\stream\inputSupport_mode\inputSupport_mode.pack" />
     <item-map filename="$(ProDir)pfc\stream\outputStreamSupport\outputStreamSupport.pack" />
     <item-map filename="$(ProDir)pfc\stream\stream.pack" />
     <item-map filename="$(ProDir)pfc\string\string.pack" />
