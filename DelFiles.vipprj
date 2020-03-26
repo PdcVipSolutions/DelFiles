@@ -50,6 +50,7 @@
     <item-map filename="$(ProDir)pfc\memory\segmented\segmentedSupport\segmentedSupport.pack" />
     <item-map filename="$(ProDir)pfc\memory\weakReference\weakReference.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\compareAndSwap\compareAndSwap.pack" />
+    <item-map filename="$(ProDir)pfc\multithread\criticalSectionSupport\criticalSectionSupport.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\multiThread.pack" />
     <item-map filename="$(ProDir)pfc\namedValue\namedValue.pack" />
     <item-map filename="$(ProDir)pfc\presenter\presenter.pack" />

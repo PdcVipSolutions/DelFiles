@@ -28,7 +28,7 @@ class predicates
     deleteFilesFromFile:(string FileName).
 clauses
     deleteFilesFromFile(FileName):-
-        if file::existFile(FileName) then
+        if file::existExactFile(FileName) then
             FileListStr=file::readString(FileName),
             FileList=string::split_delimiter(FileListStr,"\n"),
             deleteFileList(FileList),
@@ -41,10 +41,9 @@ class predicates
     deleteFileList:(string* FileList).
 clauses
     deleteFileList(FileList):-
-        _=[""||
-            FileToDelete=list::getMember_nd(FileList),
+        foreach FileToDelete=list::getMember_nd(FileList) do
             if
-                file::existFile(FileToDelete)
+                file::existExactFile(FileToDelete)
             then
                 try
                     file::delete(FileToDelete)
@@ -54,7 +53,7 @@ clauses
             else
                 stdio::writef("File %s not found\n",FileToDelete)
             end if
-        ].
+        end foreach.
 
 class predicates
     getFileList:(string* ExtList)->string* FileList.
